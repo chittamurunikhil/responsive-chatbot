@@ -18,7 +18,7 @@ JSON ONLY - no extra text."""
 
 CLARIFICATION_PROMPT = """Previous query: "{prompt}"
 
-Specify department for your query:
+Specify department for your query again:
 • Revenue: taxes, licenses, GST
 • Police: FIR, complaints, certificates  
 • Health: hospitals, schemes, vaccination
@@ -47,3 +47,4 @@ Response:"""
 
 # NO .format() at module level - completely safe
 EXTRACTION_PROMPT_BASE = EXTRACTION_PROMPT.format(depts=", ".join(DEPARTMENTS))
+
